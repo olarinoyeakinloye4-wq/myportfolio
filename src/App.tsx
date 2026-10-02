@@ -4,7 +4,7 @@ import dripcoreImage from '../image/home page dripcore.jpg'
 import eliteImage from '../image/home page elite.jpg'
 import hannieImage from '../image/menu hannie.jpg'
 import simpleHouseImage from '../image/home age simple huse resturant.jpg'
-import realEstateImage from '../image/real-estate-preview.jpg'
+import realEstateImage from '../image/real estate.jpg'
 import studyFlowDashboardImage from '../image/STUDY FLOW 1 (1).jpg'
 import studyFlowTasksImage from '../image/STUDY FLOW 2.jpg'
 
@@ -110,7 +110,7 @@ const projects: Project[] = [
     description: 'A responsive real estate website for browsing homes for sale and rent, with property search, filters, neighborhood details, and agent contacts.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     image: realEstateImage,
-    imageAlt: 'Exterior of a modern home featured on Kestrel Homes',
+    imageAlt: 'Kestrel Homes homepage screenshot showing the property search',
     liveUrl: 'https://house-renting-agent.netlify.app/',
     githubUrl: 'https://github.com/olarinoyeakinloye4-wq/Real-Estate',
   },
