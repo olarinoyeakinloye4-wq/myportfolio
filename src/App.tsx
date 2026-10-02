@@ -55,6 +55,7 @@ const projects: Project[] = [
     name: 'Study Flow',
     description: 'A modern study-management web application built to help students organize their academic activities and manage their study workflow.',
     technologies: ['React', 'TypeScript'],
+    liveUrl: 'https://studentstudyflow1.netlify.app/',
     githubUrl: 'https://github.com/olarinoyeakinloye4-wq/Student-flow',
     featured: true,
   },
