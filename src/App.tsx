@@ -4,6 +4,8 @@ import dripcoreImage from '../image/home page dripcore.jpg'
 import eliteImage from '../image/home page elite.jpg'
 import hannieImage from '../image/menu hannie.jpg'
 import simpleHouseImage from '../image/home age simple huse resturant.jpg'
+import studyFlowDashboardImage from '../image/STUDY FLOW 1 (1).jpg'
+import studyFlowTasksImage from '../image/STUDY FLOW 2.jpg'
 
 const githubUrl = 'https://github.com/olarinoyeakinloye4-wq'
 const emailAddress = 'olarinoyeakinloye4@gmail.com'
@@ -118,30 +120,9 @@ function ExternalLink({ href, children }: { href: string; children: string }) {
 
 function StudyFlowPreview() {
   return (
-    <div className="study-preview" aria-label="Study Flow project preview illustration">
-      <div className="preview-topbar">
-        <span className="preview-mark">s.</span>
-        <span>STUDY FLOW</span>
-        <span className="preview-menu">•••</span>
-      </div>
-      <div className="preview-content">
-        <div className="preview-sidebar" aria-hidden="true">
-          <i /><i /><i /><i />
-        </div>
-        <div className="preview-dashboard">
-          <span className="preview-kicker">YOUR STUDY SPACE</span>
-          <div className="preview-heading" />
-          <div className="preview-subheading" />
-          <div className="preview-panels">
-            <div className="preview-panel preview-panel-wide">
-              <i /><i /><i /><i />
-            </div>
-            <div className="preview-panel preview-panel-tall"><i /><i /><i /></div>
-            <div className="preview-panel preview-panel-short"><i /><i /></div>
-          </div>
-        </div>
-      </div>
-      <div className="preview-caption">A study-management web application</div>
+    <div className="study-preview">
+      <img src={studyFlowDashboardImage} alt="Study Flow planner dashboard showing progress and daily tasks" loading="lazy" decoding="async" />
+      <img src={studyFlowTasksImage} alt="Study Flow task-entry form and planner view" loading="lazy" decoding="async" />
     </div>
   )
 }
