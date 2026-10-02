@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react'
+import dbeccImage from '../image/home page dbecc.jpg'
+import dripcoreImage from '../image/home page dripcore.jpg'
+import eliteImage from '../image/home page elite.jpg'
+import hannieImage from '../image/menu hannie.jpg'
+import simpleHouseImage from '../image/home age simple huse resturant.jpg'
 
 const githubUrl = 'https://github.com/olarinoyeakinloye4-wq'
 const emailAddress = 'olarinoyeakinloye4@gmail.com'
 const whatsappUrl = 'https://wa.me/2347039863378'
-const linkedInUrl = 'https://www.linkedin.com/'
 
 const navigation = [
   ['Home', '#home'],
@@ -55,7 +59,7 @@ const projects: Project[] = [
     name: 'Hannie Collections',
     description: 'A responsive e-commerce/collection website designed to showcase products and provide customers with a simple way to explore and place orders.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '/image/menu hannie.jpg',
+    image: hannieImage,
     imageAlt: 'Hannie Collections website preview',
     liveUrl: 'https://hanniecollections.netlify.app',
     githubUrl,
@@ -64,7 +68,7 @@ const projects: Project[] = [
     name: 'D Bomibam Exquisite Confectionaries',
     description: 'A responsive confectionery website designed to showcase bakery products and provide customers with an easy way to explore the brand.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '/image/home page dbecc.jpg',
+    image: dbeccImage,
     imageAlt: 'D Bomibam Exquisite Confectionaries website preview',
     liveUrl: 'https://dbecc1.netlify.app',
     githubUrl,
@@ -73,7 +77,7 @@ const projects: Project[] = [
     name: 'Elite Barbershop',
     description: 'A modern barbershop website designed to showcase grooming services and provide customers with a convenient booking experience.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '/image/home page elite.jpg',
+    image: eliteImage,
     imageAlt: 'Elite Barbershop website preview',
     liveUrl: 'https://elitehaircut2.netlify.app',
     githubUrl,
@@ -82,7 +86,7 @@ const projects: Project[] = [
     name: 'DripCore',
     description: 'A modern streetwear brand website designed to showcase products and create a clean shopping experience.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '/image/home page dripcore.jpg',
+    image: dripcoreImage,
     imageAlt: 'DripCore website preview',
     liveUrl: 'https://dripcore6.netlify.app',
     githubUrl,
@@ -91,7 +95,7 @@ const projects: Project[] = [
     name: 'Simple House Restaurant',
     description: 'A responsive restaurant website designed to showcase meals, provide useful restaurant information and make ordering more convenient.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '/image/home age simple huse resturant.jpg',
+    image: simpleHouseImage,
     imageAlt: 'Simple House Restaurant website preview',
     liveUrl: 'https://simple-house-restaurant1.netlify.app',
     githubUrl,
@@ -263,14 +267,13 @@ function App() {
             </div>
             <div className="social-links" aria-label="Social links">
               <ExternalLink href={githubUrl}>GitHub</ExternalLink>
-              <ExternalLink href={linkedInUrl}>LinkedIn</ExternalLink>
               <a href={`mailto:${emailAddress}`}>Email <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div className="hero-art" aria-label="Selected project previews" data-reveal>
             <div className="hero-art-label"><span>BUILDING FOR THE WEB</span><span>01 — 06</span></div>
-            <div className="hero-image hero-image-main"><img src="/image/home page dripcore.jpg" alt="DripCore streetwear website preview" fetchPriority="high" /></div>
-            <div className="hero-image hero-image-small"><img src="/image/home page dbecc.jpg" alt="D Bomibam confectionery website preview" loading="lazy" /></div>
+            <div className="hero-image hero-image-main"><img src={dripcoreImage} alt="DripCore streetwear website preview" fetchPriority="high" /></div>
+            <div className="hero-image hero-image-small"><img src={dbeccImage} alt="D Bomibam confectionery website preview" loading="lazy" /></div>
             <div className="hero-stamp"><span>IDEA</span><span className="stamp-arrow">↘</span><span>INTERFACE</span><span className="stamp-arrow">↘</span><span>APPLICATION</span></div>
             <span className="hero-coordinate">NIGERIA</span>
           </div>
@@ -309,14 +312,14 @@ function App() {
         <section className="contact section-shell" id="contact" data-reveal>
           <div className="contact-topline"><p className="eyebrow">04 / CONTACT</p><span>LET'S TALK ABOUT YOUR PROJECT <i aria-hidden="true" /></span></div>
           <div className="contact-content"><h2>Have an idea?<br /><span>Let's build it.</span></h2><div className="contact-copy"><p>Whether you need a website, web application or a complete digital product, let's discuss what you're looking to build.</p><a className="button button-lime" href={`mailto:${emailAddress}`}>Send Me an Email <span aria-hidden="true">↗</span></a></div></div>
-          <div className="contact-links"><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp <span aria-hidden="true">↗</span></a><ExternalLink href={githubUrl}>GitHub</ExternalLink><ExternalLink href={linkedInUrl}>LinkedIn</ExternalLink></div>
+          <div className="contact-links"><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp <span aria-hidden="true">↗</span></a><ExternalLink href={githubUrl}>GitHub</ExternalLink></div>
         </section>
       </main>
 
       <footer className="site-footer">
         <a className="footer-name" href="#home">Olarinoye Akinloye Mathew<span>.</span></a>
         <p>Full-Stack Web Developer <span>·</span> Nigeria</p>
-        <div className="footer-socials"><ExternalLink href={githubUrl}>GitHub</ExternalLink><ExternalLink href={linkedInUrl}>LinkedIn</ExternalLink><a href={`mailto:${emailAddress}`}>Email</a></div>
+        <div className="footer-socials"><ExternalLink href={githubUrl}>GitHub</ExternalLink><a href={`mailto:${emailAddress}`}>Email</a></div>
         <small>© 2026 Olarinoye Akinloye Mathew</small>
       </footer>
     </>
