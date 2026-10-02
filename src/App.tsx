@@ -55,6 +55,7 @@ const projects: Project[] = [
     name: 'Study Flow',
     description: 'A modern study-management web application built to help students organize their academic activities and manage their study workflow.',
     technologies: ['React', 'TypeScript'],
+    githubUrl: 'https://github.com/olarinoyeakinloye4-wq/Student-flow',
     featured: true,
   },
   {
@@ -140,8 +141,8 @@ function ProjectCard({ project }: { project: Project }) {
             {project.technologies.map((technology) => <li key={technology}>{technology}</li>)}
           </ul>
           <div className="project-actions">
-            <span className="link-pending">Live demo coming soon</span>
-            <span className="link-pending">GitHub link coming soon</span>
+            {project.liveUrl ? <ExternalLink href={project.liveUrl}>Live demo</ExternalLink> : <span className="link-pending">Live demo unavailable</span>}
+            {project.githubUrl ? <ExternalLink href={project.githubUrl}>GitHub</ExternalLink> : <span className="link-pending">GitHub link coming soon</span>}
           </div>
         </div>
       </article>
