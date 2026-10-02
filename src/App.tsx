@@ -4,6 +4,7 @@ import dripcoreImage from '../image/home page dripcore.jpg'
 import eliteImage from '../image/home page elite.jpg'
 import hannieImage from '../image/menu hannie.jpg'
 import simpleHouseImage from '../image/home age simple huse resturant.jpg'
+import realEstateImage from '../image/real-estate-preview.jpg'
 import studyFlowDashboardImage from '../image/STUDY FLOW 1 (1).jpg'
 import studyFlowTasksImage from '../image/STUDY FLOW 2.jpg'
 
@@ -105,10 +106,13 @@ const projects: Project[] = [
     githubUrl,
   },
   {
-    name: 'Future e-commerce project',
-    description: 'Project details coming soon.',
-    technologies: [],
-    future: true,
+    name: 'Kestrel Homes',
+    description: 'A responsive real estate website for browsing homes for sale and rent, with property search, filters, neighborhood details, and agent contacts.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    image: realEstateImage,
+    imageAlt: 'Exterior of a modern home featured on Kestrel Homes',
+    liveUrl: 'https://house-renting-agent.netlify.app/',
+    githubUrl: 'https://github.com/olarinoyeakinloye4-wq/Real-Estate',
   },
 ]
 
@@ -135,7 +139,7 @@ function ProjectCard({ project }: { project: Project }) {
       <article className="featured-project" data-reveal>
         <div className="featured-visual"><StudyFlowPreview /></div>
         <div className="featured-copy">
-          <div className="project-overline"><span>FEATURED PROJECT</span><span>01 / 06</span></div>
+          <div className="project-overline"><span>FEATURED PROJECT</span><span>01 / 07</span></div>
           <h3>{project.name}</h3>
           <p>{project.description}</p>
           <ul className="technology-list" aria-label="Technologies used">
@@ -254,7 +258,7 @@ function App() {
             </div>
           </div>
           <div className="hero-art" aria-label="Selected project previews" data-reveal>
-            <div className="hero-art-label"><span>BUILDING FOR THE WEB</span><span>01 — 06</span></div>
+            <div className="hero-art-label"><span>BUILDING FOR THE WEB</span><span>01 — 07</span></div>
             <div className="hero-image hero-image-main"><img src={dripcoreImage} alt="DripCore streetwear website preview" fetchPriority="high" /></div>
             <div className="hero-image hero-image-small"><img src={dbeccImage} alt="D Bomibam confectionery website preview" loading="lazy" /></div>
             <div className="hero-stamp"><span>IDEA</span><span className="stamp-arrow">↘</span><span>INTERFACE</span><span className="stamp-arrow">↘</span><span>APPLICATION</span></div>
